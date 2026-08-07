@@ -74,5 +74,5 @@ I am a detail-oriented Quality Assurance professional who successfully transitio
 **3. Defect Management & CI/CD Integration**
 *Real-world bug tracking artifacts and continuous testing pipeline configurations.*
 * 🔗 **Repository:** [View Documentation & CI/CD Setup](#)
-* 🛠️ **Tech Stack:** Jenkins, Git, Bug Tracking Templates
+* 🛠️ **Tech Stack:** Jenkins, Git, Bug Tracking Templatespython ---
 * 📄 **Artifacts:** [Jenkinsfile](#) | [Sanitized 36-Bug Triage Log](#)
