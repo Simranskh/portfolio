@@ -1,4 +1,4 @@
-name: API Tests
+name: Quiz Practice API Tests
 
 on:
   push:
@@ -11,6 +11,10 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: 03-quiz-practice-ci-cd
 
     steps:
       - name: Checkout repository
