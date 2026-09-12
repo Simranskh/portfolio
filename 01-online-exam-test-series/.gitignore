@@ -9,8 +9,13 @@ venv/
 # SQLite database
 *.db
 
+Add-Content .gitignore "`nallure-results/`nallure-report/"
+
+
 # IDE
 .idea/
 
 # Pytest
 .pytest_cache/
+allure-results/
+allure-report/
