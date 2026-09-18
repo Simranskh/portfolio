@@ -114,5 +114,7 @@ The automation suite verifies both:
 ├── conftest.py
 ├── README.md
 └── .gitignore
-Allure Report :
-![Allure Test Report] (screenshot/AllureP2.png)
+
+## 📊 Allure Test Report
+
+![Allure Test Report](screenshot/AllureP2.png)
