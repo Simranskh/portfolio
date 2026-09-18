@@ -115,4 +115,4 @@ The automation suite verifies both:
 ├── README.md
 └── .gitignore
 Allure Report :
-![](E:\Portfolio\02-digital-library-api-testing\screenshot\AllureP2.png)
+![Allure Test Report](screenshot/AllureP2.png)
