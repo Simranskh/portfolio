@@ -17,6 +17,7 @@ The automation suite verifies both:
 ## 🧪 QA Coverage
 
 ### Books API
+
 - Create book
 - Get book by ID
 - Update book
@@ -26,6 +27,7 @@ The automation suite verifies both:
 - Database validation after create/update/delete
 
 ### Members API
+
 - Create member
 - Get member by ID
 - Duplicate email validation
@@ -33,6 +35,7 @@ The automation suite verifies both:
 - Database validation
 
 ### Borrow & Return API
+
 - Borrow a book
 - Return a book
 - Invalid book validation
@@ -44,6 +47,7 @@ The automation suite verifies both:
 - Book availability validation
 
 ### API Validation
+
 - HTTP status code validation
 - JSON response validation
 - Success and error response validation
@@ -51,6 +55,7 @@ The automation suite verifies both:
 - Business-rule validation
 
 ### Database Validation
+
 - SQLite database validation
 - Verify created records
 - Verify updated records
@@ -114,6 +119,177 @@ The automation suite verifies both:
 ├── conftest.py
 ├── README.md
 └── .gitignore
+```
 
-## 📊 Allure Test Report
-![AllureP2.png](screenshot/AllureP2.png)
+---
+
+## ⚙️ Test Architecture
+
+The project follows a layered API automation approach:
+
+```text
+Test Cases
+    │
+    ▼
+Pytest Test Layer
+    │
+    ▼
+API Client Layer
+    │
+    ▼
+REST API
+    │
+    ▼
+FastAPI Backend
+    │
+    ▼
+SQLite Database
+    │
+    ▼
+Database Validation
+```
+
+This approach allows the tests to validate both the API response and the resulting backend database state.
+
+---
+
+## 🚀 How to Run
+
+### 1. Activate the virtual environment
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+### 2. Start the backend
+
+From the project directory:
+
+```powershell
+python -m uvicorn app.backend.main:app --reload
+```
+
+The API runs locally on:
+
+```text
+http://127.0.0.1:8000
+```
+
+### 3. Run the automated tests
+
+Open another terminal in the project directory:
+
+```powershell
+pytest -v
+```
+
+---
+
+## 📊 Test Execution Results
+
+The current automated test execution contains **19 test cases**.
+
+```text
+19 passed in 5.88s
+```
+
+### Test Distribution
+
+| Module | Tests |
+|---|---:|
+| Books API | 8 |
+| Borrow & Return API | 7 |
+| Members API | 4 |
+| **Total** | **19** |
+
+### Result
+
+- **19 tests executed**
+- **19 passed**
+- **0 failed**
+- **100% pass rate**
+
+---
+
+## 📈 Allure Test Report
+
+Allure is used to provide detailed visibility into automated test execution.
+
+![Allure Test Report](screenshot/AllureP2.png)
+
+---
+
+## 🔍 Example Scenarios
+
+### Duplicate ISBN
+
+The automation creates a book and attempts to create another book using the same ISBN.
+
+Expected result:
+
+```text
+HTTP 409
+Book with this ISBN already exists
+```
+
+### Borrowing an Already Borrowed Book
+
+The automation verifies that a book cannot be borrowed by another member while it is already borrowed.
+
+Expected result:
+
+```text
+HTTP 409
+Book is already borrowed
+```
+
+### Return Validation
+
+The automation verifies:
+
+```text
+Borrowed → Returned
+```
+
+and validates that the database reflects:
+
+- Return timestamp
+- Returned status
+- Book availability restored
+
+---
+
+## 🧩 Key QA Practices Demonstrated
+
+- API functional testing
+- Positive testing
+- Negative testing
+- Error scenario validation
+- Business-rule testing
+- Response validation
+- Database validation
+- API workflow validation
+- Reusable API client classes
+- Pytest fixtures
+- Unique test data generation using UUIDs
+- Automated regression execution
+- Test reporting with Allure
+
+---
+
+## 📌 Future Enhancements
+
+- Add API schema validation
+- Add more parameterized test scenarios
+- Add authentication/authorization coverage
+- Add CI/CD execution with GitHub Actions
+- Add API performance checks
+- Expand database integrity validation
+- Add automated test execution across environments
+
+---
+
+## 👩‍💻 Skills Demonstrated
+
+**Python | Pytest | REST API Testing | HTTPX | FastAPI | SQLite | Database Testing | Negative Testing | Business Rule Validation | Allure | Git | GitHub**
+
