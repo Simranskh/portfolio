@@ -107,6 +107,8 @@ QA validations executed: 16
 QA validations failed:    0
 ```
 
+![AllureP4.png](screenshot/AllureP4.png)
+
 All database QA validations currently pass successfully.
 
 ---
