@@ -110,6 +110,7 @@ For verbose execution:
     pytest -v
 
 ---
+![AllureP5.png](screenshot/AllureP5.png)
 
 ## ✅ Latest Test Result
 
@@ -151,7 +152,6 @@ For verbose execution:
 
 ## 🚀 Future Enhancements
 
-- HTML / Allure reports
 - API schema validation
 - Parameterized tests
 - Test data factories
