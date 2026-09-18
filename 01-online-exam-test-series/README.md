@@ -23,6 +23,20 @@ ExamPro is a conceptual QA automation portfolio project representing an online e
 - [Test Strategy](docs/ExamPro_Test_Strategy.xlsx)
 - [Test Cases](docs/ExamPro_Test_Cases.xlsx)
 
-## Status
+## 📊 Allure Test Report
 
-Planning and test-design phase. No execution results are claimed until the application-under-test and automation are implemented and executed.
+Allure Report is used to provide detailed visibility into automated test execution.
+
+### Test Execution Results
+
+- **36 test cases executed**
+- **36 passed**
+- **0 failed**
+- **100% pass rate**
+- **Execution time:** ~7 seconds
+- **Framework:** Python + Pytest
+- **Reporting:** Allure
+
+![Allure Test Report] ![]("E:\Portfolio\01-online-exam-test-series\AllureP1.png.png")
+
+
