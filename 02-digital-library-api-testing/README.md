@@ -116,5 +116,4 @@ The automation suite verifies both:
 └── .gitignore
 
 ## 📊 Allure Test Report
-
-![Allure Test Report](screenshot/AllureP2.png)
+![AllureP2.png](screenshot/AllureP2.png)
