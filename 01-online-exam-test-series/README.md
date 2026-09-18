@@ -37,6 +37,5 @@ Allure Report is used to provide detailed visibility into automated test executi
 - **Framework:** Python + Pytest
 - **Reporting:** Allure
 
-![Allure Test Report] ![]("E:\Portfolio\01-online-exam-test-series\AllureP1.png.png")
-
-
+**Allure Test Report**
+![Allure Test Report](screenshot/AllureP1.png)
